@@ -9,9 +9,7 @@ const redactor = new bg.RedactorCompositeAdapter([
   new bg.RedactorCompactObjectAdapter(),
 ]);
 
-export const LoggerWinstonLocalAdapter = new bg.LoggerWinstonLocalAdapter({ app, redactor }).create(
-  Env.LOGS_LEVEL,
-);
+const LoggerWinstonLocalAdapter = new bg.LoggerWinstonLocalAdapter({ app, redactor }).create(Env.LOGS_LEVEL);
 
 export const LoggerWinstonProductionAdapter = new bg.LoggerWinstonProductionAdapter({
   app,
