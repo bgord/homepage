@@ -1,7 +1,8 @@
 # Changelog
+- 2025-11-03 19:55 a45897b **step: update packages**
+## 2025-11-03 19:55 
 - 2025-11-03 19:44 bc4233f **fix: binary name**
 - 2025-11-03 19:44 6cfd435 **fix: logger app name**
-## 2025-11-03 19:44 
 - 2025-11-03 19:39 e3bbe9d **fix: compiled binary name**
 - 2025-11-03 19:33 d6d806b **step: bump bgord/scripts**
 - 2025-11-03 19:29 2ad5223 **step: bump bgord/scripts**
@@ -31,6 +32,7 @@
 - 2025-11-03 18:48 d3d6153 **step: setup gh actions**
 - 2025-11-03 18:47 ed7ac27 **step: setup bgord-scripts**
 - 2025-11-03 18:47 9fef485 **step: setup tsconfig**
+- 2025-11-03 18:46 9fb843f **docs: generate CHANGELOG**
 - 2025-11-03 18:46 1d5cb23 **step: setup gitignore**
 - 2025-11-03 18:39 be820da **docs: generate CHANGELOG**
 - 2025-11-03 18:38 c0c8f62 **docs: generate readme**
