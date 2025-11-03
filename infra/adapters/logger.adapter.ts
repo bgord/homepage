@@ -1,7 +1,7 @@
 import * as bg from "@bgord/bun";
 import { Env } from "+infra/env";
 
-const app = "journal";
+const app = "homepage";
 
 const redactor = new bg.RedactorCompositeAdapter([
   new bg.RedactorMaskAdapter(bg.RedactorMaskAdapter.DEFAULT_KEYS),
