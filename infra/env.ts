@@ -1,0 +1,18 @@
+import * as bg from "@bgord/bun";
+import { z } from "zod/v4";
+
+const EnvironmentSchema = z
+  .object({
+    PORT: bg.Port,
+    LOGS_LEVEL: z.enum(bg.LogLevelEnum),
+    TZ: bg.TimezoneUtc,
+    BASIC_AUTH_USERNAME: bg.BasicAuthUsername,
+    BASIC_AUTH_PASSWORD: bg.BasicAuthPassword,
+    AXIOM_API_TOKEN: z.string().length(41),
+  })
+  .strip();
+
+export const Env = new bg.EnvironmentValidator<z.infer<typeof EnvironmentSchema>>({
+  type: process.env.NODE_ENV,
+  schema: EnvironmentSchema,
+}).load();
