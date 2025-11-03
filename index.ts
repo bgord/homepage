@@ -13,7 +13,7 @@ import { server, startup } from "./server";
     idleTimeout: infra.IDLE_TIMEOUT,
     routes: {
       "/favicon.ico": Bun.file("public/favicon.ico"),
-      "/api/*": server.fetch,
+      "/*": server.fetch,
     },
   });
 

@@ -11,9 +11,6 @@ import { healthcheck } from "+infra/healthcheck";
 import { I18nConfig } from "+infra/i18n";
 import * as RateLimiters from "+infra/rate-limiters";
 
-import "+infra/register-event-handlers";
-import "+infra/register-command-handlers";
-
 const Deps = {
   Logger: Adapters.Logger,
   I18n: I18nConfig,
@@ -23,7 +20,7 @@ const Deps = {
 };
 
 const production = Env.type === bg.NodeEnvironmentEnum.production;
-const server = new Hono<infra.HonoConfig>().basePath("/api");
+const server = new Hono<infra.HonoConfig>();
 
 server.use(
   ...bg.Setup.essentials(Deps, {
@@ -45,6 +42,10 @@ server.get(
   ...bg.Healthcheck.build(healthcheck, Deps),
 );
 // =============================
+
+server.get("/", async (c) => {
+  return c.html("Homepage");
+});
 
 server.onError(HTTP.ErrorHandler.handle);
 
