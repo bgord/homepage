@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "incremental": true,
+    "jsx": "react-jsx",
+    "lib": ["ESNext", "DOM"],
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "module": "preserve",
+    "paths": {
+      "+infra": ["./infra/index"],
+      "+infra/*": ["./infra/*"],
+      "+emotions": ["./modules/emotions/index"],
+      "+emotions/*": ["./modules/emotions/*"],
+      "+auth": ["./modules/auth/index"],
+      "+auth/*": ["./modules/auth/*"],
+      "+publishing": ["./modules/publishing/index"],
+      "+publishing/*": ["./modules/publishing/*"],
+      "+ai": ["./modules/ai/index"],
+      "+ai/*": ["./modules/ai/*"],
+      "+app": ["./app/index"],
+      "+app/*": ["./app/*"],
+      "+languages": ["./modules/supported-languages.ts"],
+      "+system": ["./modules/system/index"],
+      "+system/*": ["./modules/system/*"],
+      "+preferences": ["./modules/preferences/index"],
+      "+preferences/*": ["./modules/preferences/*"]
+    },
+    "types": ["./node_modules/@bgord/design/dist/index.d.ts", "@types/bun"]
+  },
+  "exclude": ["bgord-scripts"]
+}
