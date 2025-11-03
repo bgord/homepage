@@ -1,0 +1,32 @@
+# Changelog
+- 2025-11-03 19:33 d6d806b **step: bump bgord/scripts**
+## 2025-11-03 19:33 
+- 2025-11-03 19:29 2ad5223 **step: bump bgord/scripts**
+- 2025-11-03 19:22 83259dd **step: add homepage test**
+- 2025-11-03 19:20 c732781 **fix: typecheck prune**
+- 2025-11-03 19:17 de1bb85 **step: add homepage**
+- 2025-11-03 19:16 03ad5b8 **step: add test setupl**
+- 2025-11-03 19:15 3dabcf9 **step: add favicon**
+- 2025-11-03 19:14 c6f1988 **step: setup error handler**
+- 2025-11-03 19:13 4afb968 **step: adjust depcruise**
+- 2025-11-03 19:12 9114c60 **step: setup i18n**
+- 2025-11-03 19:09 23bc6ea **step: add infra adapters**
+- 2025-11-03 19:08 a2ee422 **step: setup id provider**
+- 2025-11-03 19:08 112624c **step: setup e2e**
+- 2025-11-03 19:07 3ae418c **step: add basic auth shield**
+- 2025-11-03 19:07 2219b5a **step: setup rate limiters**
+- 2025-11-03 19:05 3852932 **step: add infra/index**
+- 2025-11-03 19:04 e6a7aea **step: add env.ts**
+- 2025-11-03 19:04 550246f **step: add prereqs**
+- 2025-11-03 19:04 0a8079a **step: add healthcheck**
+- 2025-11-03 18:57 6bf2d0c **step: setup prod server build**
+- 2025-11-03 18:56 a85466a **step: setup prod server start**
+- 2025-11-03 18:56 14755fb **step: setup server.ts**
+- 2025-11-03 18:54 c5e7b4d **step: setup envs**
+- 2025-11-03 18:54 12176d1 **step: setup index.ts**
+- 2025-11-03 18:50 28a9125 **step: setup packages**
+- 2025-11-03 18:48 d3d6153 **step: setup gh actions**
+- 2025-11-03 18:47 ed7ac27 **step: setup bgord-scripts**
+- 2025-11-03 18:47 9fef485 **step: setup tsconfig**
+- 2025-11-03 18:46 1d5cb23 **step: setup gitignore**
+- 2025-11-03 12:19 322404f **step: init project**
