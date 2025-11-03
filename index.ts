@@ -1,0 +1,28 @@
+import * as bg from "@bgord/bun";
+import * as infra from "+infra";
+import { Logger } from "+infra/adapters/logger.adapter";
+import { Env } from "+infra/env";
+import { prerequisites } from "+infra/prerequisites";
+import { server, startup } from "./server";
+
+(async function main() {
+  await new bg.Prerequisites(Logger).check(prerequisites);
+
+  const app = Bun.serve({
+    maxRequestBodySize: infra.BODY_LIMIT_MAX_SIZE,
+    idleTimeout: infra.IDLE_TIMEOUT,
+    routes: {
+      "/favicon.ico": Bun.file("public/favicon.ico"),
+      "/api/*": server.fetch,
+    },
+  });
+
+  Logger.info({
+    message: "Server has started",
+    component: "infra",
+    operation: "server_startup",
+    metadata: { port: Env.PORT, startupTimeMs: startup.stop().ms },
+  });
+
+  new bg.GracefulShutdown(Logger).applyTo(app);
+})();
