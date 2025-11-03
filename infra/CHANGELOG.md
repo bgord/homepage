@@ -1,6 +1,7 @@
 # Changelog
+- 2025-11-03 19:39 e3bbe9d **fix: compiled binary name**
+## 2025-11-03 19:39 
 - 2025-11-03 19:33 d6d806b **step: bump bgord/scripts**
-## 2025-11-03 19:33 
 - 2025-11-03 19:29 2ad5223 **step: bump bgord/scripts**
 - 2025-11-03 19:22 83259dd **step: add homepage test**
 - 2025-11-03 19:20 c732781 **fix: typecheck prune**
@@ -29,4 +30,6 @@
 - 2025-11-03 18:47 ed7ac27 **step: setup bgord-scripts**
 - 2025-11-03 18:47 9fef485 **step: setup tsconfig**
 - 2025-11-03 18:46 1d5cb23 **step: setup gitignore**
+- 2025-11-03 18:38 c0c8f62 **docs: generate readme**
+- 2025-11-03 18:38 8db4518 **docs: generate CHANGELOG**
 - 2025-11-03 12:19 322404f **step: init project**
