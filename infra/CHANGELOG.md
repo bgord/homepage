@@ -1,6 +1,9 @@
 # Changelog
+- 2025-11-04 21:33 be36972 **refactor: add clock drift prereq**
+## 2025-11-04 21:33 
+- 2025-11-04 21:30 5caf89f **step: update prereqs**
+- 2025-11-04 21:30 095af51 **step: update packages**
 - 2025-11-03 19:55 a45897b **step: update packages**
-## 2025-11-03 19:55 
 - 2025-11-03 19:44 bc4233f **fix: binary name**
 - 2025-11-03 19:44 6cfd435 **fix: logger app name**
 - 2025-11-03 19:39 e3bbe9d **fix: compiled binary name**
@@ -26,6 +29,7 @@
 - 2025-11-03 18:57 6bf2d0c **step: setup prod server build**
 - 2025-11-03 18:56 a85466a **step: setup prod server start**
 - 2025-11-03 18:56 14755fb **step: setup server.ts**
+- 2025-11-03 18:56 11919b8 **docs: generate CHANGELOG**
 - 2025-11-03 18:54 c5e7b4d **step: setup envs**
 - 2025-11-03 18:54 12176d1 **step: setup index.ts**
 - 2025-11-03 18:50 28a9125 **step: setup packages**
