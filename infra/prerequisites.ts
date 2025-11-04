@@ -1,8 +1,6 @@
 import * as bg from "@bgord/bun";
 import * as tools from "@bgord/tools";
-import { CertificateInspector } from "+infra/adapters/certificate-inspector.adapter";
-import { DiskSpaceChecker } from "+infra/adapters/disk-space-checker.adapter";
-import { LoggerWinstonProductionAdapter } from "+infra/adapters/logger.adapter";
+import * as Adapters from "+infra/adapters";
 import { Env } from "+infra/env";
 
 const production = Env.type === bg.NodeEnvironmentEnum.production;
@@ -14,7 +12,7 @@ export const prerequisites = [
   new bg.PrerequisiteSpace({
     label: "disk-space",
     minimum: tools.Size.fromMB(512),
-    checker: DiskSpaceChecker,
+    checker: Adapters.DiskSpaceChecker,
   }),
   new bg.PrerequisiteNode({
     label: "node",
@@ -29,7 +27,7 @@ export const prerequisites = [
   new bg.PrerequisiteMemory({ label: "memory-consumption", maximum: tools.Size.fromMB(300) }),
   new bg.PrerequisiteLogFile({
     label: "log-file",
-    logger: LoggerWinstonProductionAdapter,
+    logger: Adapters.LoggerWinstonProductionAdapter,
     enabled: production,
   }),
   new bg.PrerequisiteOutsideConnectivity({ label: "outside-connectivity", enabled: production }),
@@ -39,6 +37,13 @@ export const prerequisites = [
     host: "homepage.bgord.dev",
     days: 7,
     enabled: production,
-    inspector: CertificateInspector,
+    inspector: Adapters.CertificateInspector,
+  }),
+  new bg.PrerequisiteClockDrift({
+    label: "clock-drift",
+    enabled: production,
+    skew: tools.Duration.Minutes(1),
+    clock: Adapters.Clock,
+    timekeeper: Adapters.Timekeeper,
   }),
 ];
