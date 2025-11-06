@@ -46,4 +46,5 @@ export const prerequisites = [
     clock: Adapters.Clock,
     timekeeper: Adapters.Timekeeper,
   }),
+  new bg.PrerequisiteOs({ label: "os", accepted: ["Darwin", "Linux"] }),
 ];
