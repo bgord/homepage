@@ -47,6 +47,8 @@ server.get("/", async (c) => {
   return c.html("Homepage");
 });
 
+server.get("/binary-search-visualizer", async (c) => c.html(await Bun.file("web/binary-search.html").text()));
+
 server.onError(HTTP.ErrorHandler.handle);
 
 export { server, startup };

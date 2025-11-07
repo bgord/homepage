@@ -1,4 +1,5 @@
 import * as bg from "@bgord/bun";
+import * as tools from "@bgord/tools";
 import * as infra from "+infra";
 import { Clock } from "+infra/adapters/clock.adapter";
 import { Logger } from "+infra/adapters/logger.adapter";
@@ -14,6 +15,12 @@ import { server, startup } from "./server";
     idleTimeout: infra.IDLE_TIMEOUT,
     routes: {
       "/favicon.ico": Bun.file("public/favicon.ico"),
+      ...bg.StaticFiles.handle(
+        "/public/*",
+        Env.type === bg.NodeEnvironmentEnum.production
+          ? bg.StaticFileStrategyMustRevalidate(tools.Duration.Minutes(5))
+          : bg.StaticFileStrategyNoop,
+      ),
       "/*": server.fetch,
     },
   });
