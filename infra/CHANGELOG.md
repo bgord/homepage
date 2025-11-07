@@ -1,8 +1,19 @@
 # Changelog
+- 2025-11-07 12:21 6140d67 **fix: clock drift prereq config**
+## 2025-11-07 12:21 
+- 2025-11-07 12:20 a725261 **step: bump bgord/scripts**
+- 2025-11-07 12:20 89c79c2 **step: add fasttrack option**
+- 2025-11-07 12:19 d269e69 **step: update packages**
+- 2025-11-06 10:28 ae69636 **step: bump bgord/scripts**
+- 2025-11-06 10:28 7ee4d57 **step: add healthcheck workflow**
+- 2025-11-06 10:28 0cbbb01 **step: add healthcheck binary prereq**
+- 2025-11-06 10:24 dd7a8dd **step: add os prereq**
+- 2025-11-06 10:23 a449872 **step: update packages**
 - 2025-11-04 21:33 be36972 **refactor: add clock drift prereq**
-## 2025-11-04 21:33 
 - 2025-11-04 21:30 5caf89f **step: update prereqs**
 - 2025-11-04 21:30 095af51 **step: update packages**
+- 2025-11-04 20:33 05ddfcb **docs: generate readme**
+- 2025-11-04 20:33 01d7ce4 **docs: generate CHANGELOG**
 - 2025-11-03 19:55 a45897b **step: update packages**
 - 2025-11-03 19:44 bc4233f **fix: binary name**
 - 2025-11-03 19:44 6cfd435 **fix: logger app name**
