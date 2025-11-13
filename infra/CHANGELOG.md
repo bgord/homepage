@@ -1,10 +1,17 @@
 # Changelog
+- 2025-11-13 10:01 7c73641 **step: update packages**
+## 2025-11-13 10:01 
+- 2025-11-11 10:01 11aece2 **step: add add max-w 600px**
+- 2025-11-11 09:37 927de97 **step: update packages**
+- 2025-11-08 19:23 a3d4f06 **step: bump bgord/scripts**
+- 2025-11-08 19:21 4d0614f **step: update bun**
+- 2025-11-07 23:21 5db86a0 **step: setup binary search html**
 - 2025-11-07 12:35 2112786 **step: bump bgord/scripts**
-## 2025-11-07 12:35 
 - 2025-11-07 12:21 6140d67 **fix: clock drift prereq config**
 - 2025-11-07 12:20 a725261 **step: bump bgord/scripts**
 - 2025-11-07 12:20 89c79c2 **step: add fasttrack option**
 - 2025-11-07 12:19 d269e69 **step: update packages**
+- 2025-11-07 11:35 5cd4e0e **docs: generate CHANGELOG**
 - 2025-11-07 11:21 79600b8 **docs: generate readme**
 - 2025-11-07 11:21 6bca717 **docs: generate CHANGELOG**
 - 2025-11-06 10:28 ae69636 **step: bump bgord/scripts**
