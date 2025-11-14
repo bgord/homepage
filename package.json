@@ -20,15 +20,15 @@
     "dependency-cruiser": "17.2.0",
     "gzip-cli": "1.2.0",
     "knip": "5.69.1",
-    "lefthook": "2.0.3",
+    "lefthook": "2.0.4",
     "postcss": "8.5.6",
     "postcss-cli": "11.0.1",
     "shellcheck": "4.1.0",
     "typescript": "5.9.3"
   },
   "dependencies": {
-    "@bgord/bun": "1.2.3",
-    "@bgord/design": "1.4.10",
+    "@bgord/bun": "1.2.4",
+    "@bgord/design": "1.4.11",
     "emittery": "1.2.0",
     "zod": "4.1.12"
   }
