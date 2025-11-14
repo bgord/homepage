@@ -1,6 +1,8 @@
 # Changelog
+- 2025-11-14 17:03 f3c1215 **step: update packages**
+## 2025-11-14 17:03 
 - 2025-11-13 10:01 7c73641 **step: update packages**
-## 2025-11-13 10:01 
+- 2025-11-13 09:01 4d1ef1a **docs: generate CHANGELOG**
 - 2025-11-11 10:01 11aece2 **step: add add max-w 600px**
 - 2025-11-11 09:37 927de97 **step: update packages**
 - 2025-11-08 19:23 a3d4f06 **step: bump bgord/scripts**
