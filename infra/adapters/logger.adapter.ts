@@ -13,7 +13,6 @@ const LoggerWinstonLocalAdapter = new bg.LoggerWinstonLocalAdapter({ app, redact
 
 export const LoggerWinstonProductionAdapter = new bg.LoggerWinstonProductionAdapter({
   app,
-  AXIOM_API_TOKEN: Env.AXIOM_API_TOKEN,
   redactor,
 });
 

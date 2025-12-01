@@ -8,7 +8,6 @@ const EnvironmentSchema = z
     TZ: bg.TimezoneUtc,
     BASIC_AUTH_USERNAME: bg.BasicAuthUsername,
     BASIC_AUTH_PASSWORD: bg.BasicAuthPassword,
-    AXIOM_API_TOKEN: z.string().length(41),
   })
   .strip();
 
