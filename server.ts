@@ -32,7 +32,7 @@ const startup = new tools.Stopwatch(Adapters.Clock.now());
 
 // Healthcheck =================
 server.get(
-  "/healthcheck",
+  "/api/healthcheck",
   bg.ShieldRateLimit(
     { enabled: production, subject: bg.AnonSubjectResolver, store: RateLimiters.HealthcheckStore },
     Deps,
