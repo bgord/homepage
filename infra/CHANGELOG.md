@@ -1,12 +1,16 @@
 # Changelog
+- 2025-12-03 11:13 705d61e **refactor: use bunx for only-allow**
+## 2025-12-03 11:13 
+- 2025-12-03 11:00 7234acf **refactor: unify deps**
+- 2025-12-03 10:59 0dc402a **step: update packages**
 - 2025-12-01 12:29 3db8681 **fix: healthcheck path**
-## 2025-12-01 12:29 
 - 2025-12-01 12:27 d1f118f **refactor: remove axiom from logger prod adapter**
 - 2025-12-01 12:24 b992706 **refactor: simplify homepage**
 - 2025-12-01 12:17 c393f1f **step: bump bgord/scripts**
 - 2025-12-01 12:04 d19b3ec **step: update packages**
 - 2025-12-01 12:04 7240d84 **step: bump bgord/scripts**
 - 2025-12-01 12:04 28af4f9 **step: update bun**
+- 2025-12-01 11:29 a3ee5cc **docs: generate CHANGELOG**
 - 2025-12-01 11:27 bbad6af **docs: generate CHANGELOG**
 - 2025-12-01 11:17 a5a7eb4 **docs: generate CHANGELOG**
 - 2025-12-01 11:05 90e50dd **docs: generate CHANGELOG**
