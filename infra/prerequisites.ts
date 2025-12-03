@@ -12,7 +12,7 @@ export const prerequisites = [
   new bg.PrerequisiteSpace({
     label: "disk-space",
     minimum: tools.Size.fromMB(512),
-    checker: Adapters.DiskSpaceChecker,
+    DiskSpaceChecker: Adapters.DiskSpaceChecker,
   }),
   new bg.PrerequisiteNode({
     label: "node",
@@ -27,7 +27,7 @@ export const prerequisites = [
   new bg.PrerequisiteMemory({ label: "memory-consumption", maximum: tools.Size.fromMB(300) }),
   new bg.PrerequisiteLogFile({
     label: "log-file",
-    logger: Adapters.LoggerWinstonProductionAdapter,
+    Logger: Adapters.LoggerWinstonProductionAdapter,
     enabled: production,
   }),
   new bg.PrerequisiteOutsideConnectivity({ label: "outside-connectivity", enabled: production }),
@@ -37,13 +37,13 @@ export const prerequisites = [
     host: "homepage.bgord.dev",
     days: 7,
     enabled: production,
-    inspector: Adapters.CertificateInspector,
+    CertificateInspector: Adapters.CertificateInspector,
   }),
   new bg.PrerequisiteClockDrift({
     label: "clock-drift",
     enabled: production,
     skew: tools.Duration.Minutes(1),
-    timekeeper: Adapters.Timekeeper,
+    Timekeeper: Adapters.Timekeeper,
   }),
   new bg.PrerequisiteOs({ label: "os", accepted: ["Darwin", "Linux"] }),
 ];
