@@ -34,7 +34,7 @@ export const prerequisites = [
   new bg.PrerequisiteRunningUser({ label: "user", username: "bgord", enabled: production }),
   new bg.PrerequisiteSSLCertificateExpiry({
     label: "ssl",
-    host: "homepage.bgord.dev",
+    hostname: "homepage.bgord.dev",
     days: 7,
     enabled: production,
     CertificateInspector: Adapters.CertificateInspector,
