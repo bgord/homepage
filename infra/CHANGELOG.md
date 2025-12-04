@@ -1,6 +1,9 @@
 # Changelog
+- 2025-12-04 12:11 2b10866 **refactor: adjust hostname**
+## 2025-12-04 12:11 
+- 2025-12-04 12:10 8c6c3b7 **step: update packages**
 - 2025-12-03 18:14 ac2a8e3 **step: update packages**
-## 2025-12-03 18:14 
+- 2025-12-03 17:15 cf4b99b **docs: generate CHANGELOG**
 - 2025-12-03 11:43 c4d7986 **step: bump bgord/scripts**
 - 2025-12-03 11:13 705d61e **refactor: use bunx for only-allow**
 - 2025-12-03 11:00 7234acf **refactor: unify deps**
