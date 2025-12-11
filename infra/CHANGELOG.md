@@ -1,6 +1,9 @@
 # Changelog
+- 2025-12-11 23:14 e981985 **refactor: unify logger**
+## 2025-12-11 23:14 
+- 2025-12-11 23:13 4688763 **step: update packages**
 - 2025-12-10 12:00 fced87a **step: update packages**
-## 2025-12-10 12:00 
+- 2025-12-10 11:01 8c2b921 **docs: generate CHANGELOG**
 - 2025-12-04 12:20 63ec6e0 **step: update packages**
 - 2025-12-04 12:11 2b10866 **refactor: adjust hostname**
 - 2025-12-04 12:10 8c6c3b7 **step: update packages**
