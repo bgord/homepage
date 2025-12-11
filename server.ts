@@ -33,10 +33,10 @@ const startup = new tools.Stopwatch(Adapters.Clock.now());
 // Healthcheck =================
 server.get(
   "/api/healthcheck",
-  bg.ShieldRateLimit(
+  new bg.ShieldRateLimitAdapter(
     { enabled: production, subject: bg.AnonSubjectResolver, store: RateLimiters.HealthcheckStore },
     Deps,
-  ),
+  ).verify,
   timeout(tools.Duration.Seconds(15).ms, infra.requestTimeoutError),
   BasicAuthShield,
   ...bg.Healthcheck.build(healthcheck, Deps),
