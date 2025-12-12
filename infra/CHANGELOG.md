@@ -1,6 +1,7 @@
 # Changelog
+- 2025-12-12 20:24 57de6b6 **step: add binary prereqs**
+## 2025-12-12 20:24 
 - 2025-12-12 20:17 ddb38ea **step: bump bgord/scripts**
-## 2025-12-12 20:17 
 - 2025-12-12 20:16 609a5d9 **step: adjsut deploy server**
 - 2025-12-12 19:58 543896b **refactor: remove index import in tests setup**
 - 2025-12-12 19:56 bb4072a **refactor: dependency injection**
@@ -8,6 +9,7 @@
 - 2025-12-12 19:35 87eaea5 **refactor: adjust prereqs**
 - 2025-12-12 19:35 68f979c **refactor: adjust env**
 - 2025-12-12 19:31 eee2eeb **step: update packages**
+- 2025-12-12 19:17 dc0f2ac **docs: generate CHANGELOG**
 - 2025-12-12 18:58 4aaeca7 **docs: generate CHANGELOG**
 - 2025-12-12 18:56 e12bcb8 **docs: generate readme**
 - 2025-12-12 18:56 01a4cb4 **docs: generate CHANGELOG**
