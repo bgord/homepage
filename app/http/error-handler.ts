@@ -3,10 +3,11 @@ import * as tools from "@bgord/tools";
 import type hono from "hono";
 import { HTTPException } from "hono/http-exception";
 import z from "zod/v4";
-import { Logger } from "+infra/adapters";
+
+type Dependencies = { Logger: bg.LoggerPort };
 
 export class ErrorHandler {
-  static handle: hono.ErrorHandler = async (error, c) => {
+  static handle: (deps: Dependencies) => hono.ErrorHandler = (deps) => async (error, c) => {
     const url = c.req.url;
     const correlationId = c.get("requestId") as bg.CorrelationIdType;
 
@@ -53,7 +54,7 @@ export class ErrorHandler {
     }
 
     if (error instanceof z.ZodError) {
-      Logger.error({
+      deps.Logger.error({
         message: "Invalid payload",
         component: "http",
         operation: "invalid_payload",
@@ -65,7 +66,7 @@ export class ErrorHandler {
       return c.json({ message: "payload.invalid.error", _known: true }, 400);
     }
 
-    Logger.error({
+    deps.Logger.error({
       message: "Unknown error",
       component: "http",
       operation: "unknown_error",

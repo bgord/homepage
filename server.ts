@@ -1,51 +1,33 @@
 import * as bg from "@bgord/bun";
-import * as tools from "@bgord/tools";
 import { Hono } from "hono";
-import { timeout } from "hono/timeout";
 import { HTTP } from "+app";
-import * as infra from "+infra";
-import * as Adapters from "+infra/adapters";
-import { BasicAuthShield } from "+infra/basic-auth-shield";
-import { Env } from "+infra/env";
-import { healthcheck } from "+infra/healthcheck";
-import { I18nConfig } from "+infra/i18n";
-import * as RateLimiters from "+infra/rate-limiters";
+import type * as infra from "+infra";
+import type { bootstrap } from "+infra/bootstrap";
 
-const Deps = {
-  Logger: Adapters.Logger,
-  I18n: I18nConfig,
-  IdProvider: Adapters.IdProvider,
-  Clock: Adapters.Clock,
-  JsonFileReader: Adapters.JsonFileReader,
-};
+export function createServer(di: Awaited<ReturnType<typeof bootstrap>>) {
+  const server = new Hono<infra.Config>().use(
+    ...bg.Setup.essentials(
+      { ...di.Adapters.System, I18n: di.Tools.I18nConfig },
+      { httpLogger: { skip: ["/api/translations", "/api/profile-avatar/get", "/api/auth/get-session"] } },
+    ),
+  );
 
-const production = Env.type === bg.NodeEnvironmentEnum.production;
-const server = new Hono<infra.HonoConfig>();
+  // Healthcheck =================
+  server.get(
+    "/api/healthcheck",
+    di.Adapters.System.ShieldRateLimit.verify,
+    di.Adapters.System.ShieldTimeout.verify,
+    di.Adapters.System.ShieldBasicAuth.verify,
+    ...bg.Healthcheck.build(di.Tools.prerequisites, di.Adapters.System),
+  );
+  // =============================
 
-server.use(
-  ...bg.Setup.essentials(Deps, {
-    httpLogger: { skip: ["/api/translations", "/api/profile-avatar/get", "/api/auth/get-session"] },
-  }),
-);
+  server.get("/", async (c) => c.html("Homepage"));
+  server.get("/binary-search-visualizer", async (c) =>
+    c.html(await Bun.file("web/binary-search.html").text()),
+  );
 
-const startup = new tools.Stopwatch(Adapters.Clock.now());
+  server.onError(HTTP.ErrorHandler.handle(di.Adapters.System));
 
-// Healthcheck =================
-server.get(
-  "/api/healthcheck",
-  new bg.ShieldRateLimitAdapter(
-    { enabled: production, subject: bg.AnonSubjectResolver, store: RateLimiters.HealthcheckStore },
-    Deps,
-  ).verify,
-  timeout(tools.Duration.Seconds(15).ms, infra.requestTimeoutError),
-  BasicAuthShield,
-  ...bg.Healthcheck.build(healthcheck, Deps),
-);
-// =============================
-
-server.get("/", async (c) => c.html("Homepage"));
-server.get("/binary-search-visualizer", async (c) => c.html(await Bun.file("web/binary-search.html").text()));
-
-server.onError(HTTP.ErrorHandler.handle);
-
-export { server, startup };
+  return server;
+}

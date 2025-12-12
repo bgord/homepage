@@ -5,7 +5,6 @@ import type { EnvironmentType } from "+infra/env";
 type Dependencies = {
   DiskSpaceChecker: bg.DiskSpaceCheckerPort;
   Logger: bg.LoggerPort;
-  Mailer: bg.MailerPort;
   CertificateInspector: bg.CertificateInspectorPort;
   Timekeeper: bg.TimekeeperPort;
 };
@@ -34,7 +33,6 @@ export function createPrerequisites(Env: EnvironmentType, deps: Dependencies) {
     }),
     new bg.PrerequisiteMemory({ label: "memory-consumption", maximum: tools.Size.fromMB(300) }),
     new bg.PrerequisiteLogFile({ label: "log-file", Logger: deps.Logger, enabled: production }),
-    new bg.PrerequisiteMailer({ label: "mailer", enabled: production, Mailer: deps.Mailer }),
     new bg.PrerequisiteOutsideConnectivity({ label: "outside-connectivity", enabled: production }),
     new bg.PrerequisiteRunningUser({ label: "user", username: "bgord", enabled: production }),
     new bg.PrerequisiteSSLCertificateExpiry({
