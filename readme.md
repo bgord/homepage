@@ -59,20 +59,22 @@ app/
 ```
 infra/
 ├── adapters
-│   ├── certificate-inspector.adapter.ts
-│   ├── clock.adapter.ts
-│   ├── disk-space-checker.adapter.ts
-│   ├── id-provider.adapter.ts
-│   ├── json-file-reader.adapter.ts
-│   ├── logger.adapter.ts
-│   └── timekeeper.adapter.ts
-├── basic-auth-shield.ts
+│   └── system
+│       ├── certificate-inspector.adapter.ts
+│       ├── clock.adapter.ts
+│       ├── disk-space-checker.adapter.ts
+│       ├── id-provider.adapter.ts
+│       ├── json-file-reader.adapter.ts
+│       ├── logger.adapter.ts
+│       ├── shield-basic-auth.adapter.ts
+│       ├── shield-rate-limit.adapter.ts
+│       ├── shield-timeout.adapter.ts
+│       └── timekeeper.adapter.ts
+├── bootstrap.ts
 ├── depcruise.webpack.cjs
 ├── e2e
 │   └── home.spec.ts
 ├── env.ts
-├── healthcheck.ts
 ├── i18n.ts
-├── prerequisites.ts
-└── rate-limiters.ts
+└── prerequisites.ts
 ```
