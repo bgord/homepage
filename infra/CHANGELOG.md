@@ -1,7 +1,13 @@
 # Changelog
+- 2025-12-12 19:56 bb4072a **refactor: dependency injection**
+## 2025-12-12 19:56 
+- 2025-12-12 19:35 e5158ee **step: setup bootstrap**
+- 2025-12-12 19:35 87eaea5 **refactor: adjust prereqs**
+- 2025-12-12 19:35 68f979c **refactor: adjust env**
+- 2025-12-12 19:31 eee2eeb **step: update packages**
 - 2025-12-11 23:14 e981985 **refactor: unify logger**
-## 2025-12-11 23:14 
 - 2025-12-11 23:13 4688763 **step: update packages**
+- 2025-12-11 22:15 c66a94b **docs: generate CHANGELOG**
 - 2025-12-10 12:00 fced87a **step: update packages**
 - 2025-12-10 11:01 8c2b921 **docs: generate CHANGELOG**
 - 2025-12-04 12:20 63ec6e0 **step: update packages**
