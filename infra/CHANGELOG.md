@@ -1,7 +1,9 @@
 # Changelog
+- 2025-12-14 23:40 8ff1cc2 **step: update packages**
+## 2025-12-14 23:40 
 - 2025-12-14 13:06 b7901ae **step: update packages**
 - 2025-12-14 13:06 398a228 **refactor: update prereqs**
-## 2025-12-14 13:06 
+- 2025-12-14 12:06 f5b2fc5 **docs: generate CHANGELOG**
 - 2025-12-13 21:35 c8ef360 **step: update packages**
 - 2025-12-13 21:32 0308793 **refactor: remove uneceessary factory functions**
 - 2025-12-13 20:35 cb7f22a **docs: generate CHANGELOG**
