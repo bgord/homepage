@@ -1,7 +1,10 @@
 # Changelog
+- 2025-12-14 13:06 b7901ae **step: update packages**
+- 2025-12-14 13:06 398a228 **refactor: update prereqs**
+## 2025-12-14 13:06 
 - 2025-12-13 21:35 c8ef360 **step: update packages**
-## 2025-12-13 21:35 
 - 2025-12-13 21:32 0308793 **refactor: remove uneceessary factory functions**
+- 2025-12-13 20:35 cb7f22a **docs: generate CHANGELOG**
 - 2025-12-12 20:24 57de6b6 **step: add binary prereqs**
 - 2025-12-12 20:17 ddb38ea **step: bump bgord/scripts**
 - 2025-12-12 20:16 609a5d9 **step: adjsut deploy server**
