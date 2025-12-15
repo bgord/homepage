@@ -11,6 +11,7 @@ type Dependencies = {
 
 export function createPrerequisites(Env: EnvironmentType, deps: Dependencies) {
   const production = Env.type === bg.NodeEnvironmentEnum.production;
+  const local = Env.type === bg.NodeEnvironmentEnum.local;
 
   return [
     new bg.PrerequisitePort({ label: "port", port: Env.PORT }),
@@ -42,5 +43,6 @@ export function createPrerequisites(Env: EnvironmentType, deps: Dependencies) {
     new bg.PrerequisiteBinary({ label: "httpie", binary: bg.Binary.parse("http") }),
     new bg.PrerequisiteBinary({ label: "sqlite3", binary: bg.Binary.parse("sqlite3") }),
     new bg.PrerequisiteBinary({ label: "tar", binary: bg.Binary.parse("tar") }),
+    new bg.PrerequisiteBinary({ label: "gitleaks", binary: bg.Binary.parse("gitleaks"), enabled: local }),
   ];
 }
