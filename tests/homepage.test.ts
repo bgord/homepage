@@ -1,12 +1,14 @@
 import { describe, expect, test } from "bun:test";
 import { bootstrap } from "+infra/bootstrap";
+import { EnvironmentLoader } from "+infra/env";
 import { createServer } from "../server";
 import * as mocks from "./mocks";
 
 const url = "/";
 
 describe(`GET ${url}`, async () => {
-  const di = await bootstrap(mocks.Env);
+  const Env = await EnvironmentLoader.load();
+  const di = await bootstrap(Env);
   const server = createServer(di);
 
   test("happy path", async () => {
