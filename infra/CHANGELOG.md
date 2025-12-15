@@ -1,9 +1,11 @@
 # Changelog
+- 2025-12-15 19:53 b07d543 **step: update deploy server**
+## 2025-12-15 19:53 
 - 2025-12-15 19:52 b114225 **step: bump bgord/scripts**
-## 2025-12-15 19:52 
 - 2025-12-15 19:04 149a3c9 **step: install only-allow**
 - 2025-12-15 19:03 b3c1fff **step: bump bgord/scripts**
 - 2025-12-15 19:03 5560e4c **step: update packages**
+- 2025-12-15 18:53 dfb117a **docs: generate CHANGELOG**
 - 2025-12-15 18:04 7dd0a55 **docs: generate CHANGELOG**
 - 2025-12-15 12:00 eeb888e **refactor: update env**
 - 2025-12-15 11:58 16aab9c **step: update packages**
