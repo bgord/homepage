@@ -1,7 +1,11 @@
 # Changelog
+- 2025-12-15 19:04 149a3c9 **step: install only-allow**
+## 2025-12-15 19:04 
+- 2025-12-15 19:03 b3c1fff **step: bump bgord/scripts**
+- 2025-12-15 19:03 5560e4c **step: update packages**
 - 2025-12-15 12:00 eeb888e **refactor: update env**
-## 2025-12-15 12:00 
 - 2025-12-15 11:58 16aab9c **step: update packages**
+- 2025-12-15 11:00 76fae87 **docs: generate CHANGELOG**
 - 2025-12-14 23:40 8ff1cc2 **step: update packages**
 - 2025-12-14 22:41 9cbe2c5 **docs: generate CHANGELOG**
 - 2025-12-14 13:06 b7901ae **step: update packages**
