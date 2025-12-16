@@ -1,13 +1,10 @@
 import * as bg from "@bgord/bun";
 import * as tools from "@bgord/tools";
 import { bootstrap } from "+infra/bootstrap";
-import { EnvironmentLoader } from "+infra/env";
 import { createServer } from "./server";
 
 (async function main() {
-  const Env = await EnvironmentLoader.load();
-
-  const di = await bootstrap(Env);
+  const di = await bootstrap();
   const server = createServer(di);
 
   await new bg.Prerequisites(di.Adapters.System).check(di.Tools.prerequisites);
@@ -19,7 +16,7 @@ import { createServer } from "./server";
       "/favicon.ico": Bun.file("public/favicon.ico"),
       ...bg.StaticFiles.handle(
         "/public/*",
-        Env.type === bg.NodeEnvironmentEnum.production
+        di.Env.type === bg.NodeEnvironmentEnum.production
           ? bg.StaticFileStrategyMustRevalidate(tools.Duration.Minutes(5))
           : bg.StaticFileStrategyNoop,
       ),
@@ -33,6 +30,6 @@ import { createServer } from "./server";
     message: "Server has started",
     component: "infra",
     operation: "server_startup",
-    metadata: { port: Env.PORT },
+    metadata: { port: di.Env.PORT },
   });
 })();
