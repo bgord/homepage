@@ -10,6 +10,7 @@ import { createServer } from "./server";
   await new bg.Prerequisites(di.Adapters.System).check(di.Tools.prerequisites);
 
   const app = Bun.serve({
+    port: di.Env.PORT,
     maxRequestBodySize: tools.Size.fromKb(128).toBytes(),
     idleTimeout: tools.Duration.Seconds(10).seconds,
     routes: {
