@@ -68,8 +68,6 @@ app/
 infra/
 ├── adapters
 │   └── system
-│       ├── cache-repository.adapter.ts
-│       ├── cache-resolver.adapter.ts
 │       ├── certificate-inspector.adapter.ts
 │       ├── clock.adapter.ts
 │       ├── disk-space-checker.adapter.ts
