@@ -1,7 +1,15 @@
 # Changelog
+- 2025-12-17 23:24 ae4e3b0 **step: adjust shield rate limit adapter**
+## 2025-12-17 23:24 
+- 2025-12-17 23:23 2c03c47 **step: adjust env**
+- 2025-12-17 23:21 e4d9a31 **step: update packages**
+- 2025-12-17 15:08 9bfbc56 **step: update packages**
+- 2025-12-17 13:51 84a9a7a **step: add env prereqs**
+- 2025-12-17 12:29 0e634d8 **step: update packages**
 - 2025-12-17 00:18 372fcc2 **step: adjust build process**
-## 2025-12-17 00:18 
 - 2025-12-17 00:17 d83bbe1 **step: bump bgord/scripts**
+- 2025-12-16 23:18 dbef4fc **docs: generate CHANGELOG**
+- 2025-12-16 23:18 9c8f23e **docs: generate readme**
 - 2025-12-16 23:13 21de74d **step: adjust paths**
 - 2025-12-16 22:15 7f9e6ee **docs: generate CHANGELOG**
 - 2025-12-16 13:58 dcbbefa **step: update env**
