@@ -1,8 +1,11 @@
 # Changelog
+- 2025-12-18 00:03 71a2869 **refactor: construct shield rate limit in place**
+## 2025-12-18 00:03 
 - 2025-12-17 23:24 ae4e3b0 **step: adjust shield rate limit adapter**
-## 2025-12-17 23:24 
 - 2025-12-17 23:23 2c03c47 **step: adjust env**
 - 2025-12-17 23:21 e4d9a31 **step: update packages**
+- 2025-12-17 22:24 ee21771 **docs: generate readme**
+- 2025-12-17 22:24 6ccac8b **docs: generate CHANGELOG**
 - 2025-12-17 15:08 9bfbc56 **step: update packages**
 - 2025-12-17 13:51 84a9a7a **step: add env prereqs**
 - 2025-12-17 12:29 0e634d8 **step: update packages**
