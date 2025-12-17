@@ -1,4 +1,6 @@
 import type { EnvironmentType } from "+infra/env";
+import { CacheRepository } from "./cache-repository.adapter";
+import { createCacheResolver } from "./cache-resolver.adapter";
 import { createCertificateInspector } from "./certificate-inspector.adapter";
 import { Clock } from "./clock.adapter";
 import { createDiskSpaceChecker } from "./disk-space-checker.adapter";
@@ -13,6 +15,7 @@ import { createTimekeeper } from "./timekeeper.adapter";
 export function createSystemAdapters(Env: EnvironmentType) {
   const Logger = createLogger(Env);
   const Timekeeper = createTimekeeper(Env, { Clock });
+  const CacheResolver = createCacheResolver({ CacheRepository });
 
   return {
     ShieldBasicAuth: createShieldBasicAuth(Env),
@@ -24,6 +27,6 @@ export function createSystemAdapters(Env: EnvironmentType) {
     Logger,
     Timekeeper,
     ShieldTimeout,
-    ShieldRateLimit: createShieldRateLimit(Env, { Clock }),
+    ShieldRateLimit: createShieldRateLimit(Env, { Clock, CacheResolver }),
   };
 }
