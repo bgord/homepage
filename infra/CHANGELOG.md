@@ -1,7 +1,9 @@
 # Changelog
+- 2025-12-19 00:04 f8dedb8 **step: update packages**
+## 2025-12-19 00:04 
 - 2025-12-18 20:37 3a2a6aa **refactor: update cache infra**
-## 2025-12-18 20:37 
 - 2025-12-18 20:36 c2b8384 **step: update packages**
+- 2025-12-18 19:38 d95c7b3 **docs: generate CHANGELOG**
 - 2025-12-18 00:36 59c0ddc **step: update bun version**
 - 2025-12-18 00:36 541eae3 **step: bump bgord/scripts**
 - 2025-12-18 00:04 9c605c0 **step: update packages**
