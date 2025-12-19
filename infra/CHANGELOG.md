@@ -1,6 +1,10 @@
 # Changelog
+- 2025-12-19 21:46 e10f901 **step: update packages**
+## 2025-12-19 21:46 
+- 2025-12-19 17:39 d20d16e **step: bump bgord/scripts**
+- 2025-12-19 17:39 2ce4401 **refactor: remove validate_environment_file**
 - 2025-12-19 12:52 99d28f6 **step: update packages**
-## 2025-12-19 12:52 
+- 2025-12-19 11:53 8da0ae2 **docs: generate CHANGELOG**
 - 2025-12-19 11:15 23ced66 **step: update packages**
 - 2025-12-19 10:15 4f3e4c3 **docs: generate CHANGELOG**
 - 2025-12-19 01:07 a925424 **step: update packages**
