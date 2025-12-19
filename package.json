@@ -29,7 +29,7 @@
     "typescript": "5.9.3"
   },
   "dependencies": {
-    "@bgord/bun": "1.6.1",
+    "@bgord/bun": "1.6.2",
     "@bgord/design": "1.4.15",
     "emittery": "1.2.0",
     "zod": "4.2.1"
