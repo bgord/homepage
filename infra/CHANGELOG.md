@@ -1,6 +1,10 @@
 # Changelog
+- 2025-12-29 22:48 263518d **refactor: order decorators**
+## 2025-12-29 22:48 
+- 2025-12-29 22:33 96b7dde **step: add with fail safe to prereqs**
+- 2025-12-29 22:23 7d1e028 **step: add with timeout to prereqs**
+- 2025-12-29 22:13 8c92bc6 **step: add with retry to prereqs**
 - 2025-12-29 18:32 5d118e9 **refactor: separate tools and adapters**
-## 2025-12-29 18:32 
 - 2025-12-29 18:24 9400726 **refactor: update server**
 - 2025-12-29 18:24 93faf5c **refactor: update logger**
 - 2025-12-29 18:23 fdf0e8f **refactor: update shields**
@@ -8,6 +12,8 @@
 - 2025-12-29 18:22 75d036d **refactor: update file reader json adapter**
 - 2025-12-29 18:18 c347428 **refactor: update prereqs**
 - 2025-12-29 18:04 b30067d **step: update packages**
+- 2025-12-29 17:32 fc3086d **docs: generate readme**
+- 2025-12-29 17:32 81d4d98 **docs: generate CHANGELOG**
 - 2025-12-19 21:46 e10f901 **step: update packages**
 - 2025-12-19 20:47 847d624 **docs: generate CHANGELOG**
 - 2025-12-19 17:39 d20d16e **step: bump bgord/scripts**
