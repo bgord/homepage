@@ -1,6 +1,15 @@
 # Changelog
+- 2025-12-29 18:32 5d118e9 **refactor: separate tools and adapters**
+## 2025-12-29 18:32 
+- 2025-12-29 18:24 9400726 **refactor: update server**
+- 2025-12-29 18:24 93faf5c **refactor: update logger**
+- 2025-12-29 18:23 fdf0e8f **refactor: update shields**
+- 2025-12-29 18:22 ccf9bc8 **refactor: update error handler**
+- 2025-12-29 18:22 75d036d **refactor: update file reader json adapter**
+- 2025-12-29 18:18 c347428 **refactor: update prereqs**
+- 2025-12-29 18:04 b30067d **step: update packages**
 - 2025-12-19 21:46 e10f901 **step: update packages**
-## 2025-12-19 21:46 
+- 2025-12-19 20:47 847d624 **docs: generate CHANGELOG**
 - 2025-12-19 17:39 d20d16e **step: bump bgord/scripts**
 - 2025-12-19 17:39 2ce4401 **refactor: remove validate_environment_file**
 - 2025-12-19 12:52 99d28f6 **step: update packages**
