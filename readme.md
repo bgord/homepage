@@ -74,7 +74,9 @@ infra/
 │       ├── file-reader-json.adapter.ts
 │       ├── id-provider.adapter.ts
 │       ├── logger.adapter.ts
-│       └── timekeeper.adapter.ts
+│       ├── sleeper.adapter.ts
+│       ├── timekeeper.adapter.ts
+│       └── timeout-runner.adapter.ts
 ├── bootstrap.ts
 ├── depcruise.webpack.cjs
 ├── e2e
