@@ -4,9 +4,9 @@ import type { EnvironmentType } from "+infra/env";
 export function createLogger(Env: EnvironmentType): bg.LoggerPort {
   const app = "homepage";
 
-  const redactor = new bg.RedactorCompositeAdapter([
-    new bg.RedactorCompactArrayAdapter(),
-    new bg.RedactorMaskAdapter(bg.RedactorMaskAdapter.DEFAULT_KEYS),
+  const redactor = new bg.RedactorCompositeStrategy([
+    new bg.RedactorCompactArrayStrategy(),
+    new bg.RedactorMaskStrategy(bg.RedactorMaskStrategy.DEFAULT_KEYS),
   ]);
 
   return {
