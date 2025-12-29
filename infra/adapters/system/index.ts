@@ -7,6 +7,7 @@ import { IdProvider } from "./id-provider.adapter";
 import { createLogger } from "./logger.adapter";
 import { createSleeper } from "./sleeper.adapter";
 import { createTimekeeper } from "./timekeeper.adapter";
+import { createTimeoutRunner } from "./timeout-runner.adapter";
 
 export function createSystemAdapters(Env: EnvironmentType) {
   const Logger = createLogger(Env);
@@ -21,5 +22,6 @@ export function createSystemAdapters(Env: EnvironmentType) {
     Logger,
     Timekeeper,
     Sleeper: createSleeper(Env),
+    TimeoutRunner: createTimeoutRunner(Env),
   };
 }
