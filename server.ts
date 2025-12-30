@@ -5,12 +5,14 @@ import type * as infra from "+infra";
 import type { bootstrap } from "+infra/bootstrap";
 
 export function createServer(di: Awaited<ReturnType<typeof bootstrap>>) {
-  const server = new Hono<infra.Config>().use(
-    ...bg.Setup.essentials(
-      { ...di.Adapters.System, I18n: di.Tools.I18nConfig },
-      { httpLogger: { skip: ["/api/translations", "/api/profile-avatar/get", "/api/auth/get-session"] } },
-    ),
-  );
+  const server = new Hono<infra.Config>()
+    .use(
+      ...bg.Setup.essentials(
+        { ...di.Adapters.System, I18n: di.Tools.I18nConfig },
+        { httpLogger: { skip: ["/api/translations", "/api/profile-avatar/get", "/api/auth/get-session"] } },
+      ),
+    )
+    .use(di.Tools.ShieldSecurity.verify);
 
   // Healthcheck =================
   server.get(

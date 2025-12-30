@@ -4,6 +4,7 @@ import { I18nConfig } from "./i18n";
 import { createPrerequisites } from "./prerequisites";
 import { createShieldBasicAuth } from "./shield-basic-auth.strategy";
 import { createShieldRateLimit } from "./shield-rate-limit.strategy";
+import { createShieldSecurity } from "./shield-security.strategy";
 import { ShieldTimeout } from "./shield-timeout.strategy";
 
 type Dependencies = {
@@ -23,5 +24,6 @@ export function createTools(Env: EnvironmentType, deps: Dependencies) {
     ShieldBasicAuth: createShieldBasicAuth(Env),
     Prerequisites: createPrerequisites(Env, deps),
     I18nConfig,
+    ShieldSecurity: createShieldSecurity(Env, deps),
   };
 }
