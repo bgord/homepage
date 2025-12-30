@@ -1,8 +1,10 @@
 # Changelog
+- 2025-12-30 14:46 bd1dfb0 **step: update packages**
+## 2025-12-30 14:46 
 - 2025-12-30 14:15 a1f0fb5 **step: update packages**
 - 2025-12-30 14:15 22b6b35 **refactor: use integer types**
-## 2025-12-30 14:15 
 - 2025-12-30 13:18 ce24120 **step: enable shield security in prod**
+- 2025-12-30 13:16 c2378f6 **docs: generate CHANGELOG**
 - 2025-12-30 13:01 99e87ef **refactor: adjust cert inspector**
 - 2025-12-30 12:51 1260564 **feature: add shield security**
 - 2025-12-30 12:50 91fd9d6 **step: update packages**
