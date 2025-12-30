@@ -1,9 +1,14 @@
 # Changelog
+- 2025-12-30 13:01 99e87ef **refactor: adjust cert inspector**
+## 2025-12-30 13:01 
+- 2025-12-30 12:51 1260564 **feature: add shield security**
+- 2025-12-30 12:50 91fd9d6 **step: update packages**
 - 2025-12-29 22:48 263518d **refactor: order decorators**
-## 2025-12-29 22:48 
 - 2025-12-29 22:33 96b7dde **step: add with fail safe to prereqs**
 - 2025-12-29 22:23 7d1e028 **step: add with timeout to prereqs**
 - 2025-12-29 22:13 8c92bc6 **step: add with retry to prereqs**
+- 2025-12-29 21:50 8d6fe80 **docs: generate CHANGELOG**
+- 2025-12-29 21:50 5bb3535 **docs: generate readme**
 - 2025-12-29 18:32 5d118e9 **refactor: separate tools and adapters**
 - 2025-12-29 18:24 9400726 **refactor: update server**
 - 2025-12-29 18:24 93faf5c **refactor: update logger**
