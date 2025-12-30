@@ -1,8 +1,13 @@
 # Changelog
+- 2025-12-30 14:15 a1f0fb5 **step: update packages**
+- 2025-12-30 14:15 22b6b35 **refactor: use integer types**
+## 2025-12-30 14:15 
+- 2025-12-30 13:18 ce24120 **step: enable shield security in prod**
 - 2025-12-30 13:01 99e87ef **refactor: adjust cert inspector**
-## 2025-12-30 13:01 
 - 2025-12-30 12:51 1260564 **feature: add shield security**
 - 2025-12-30 12:50 91fd9d6 **step: update packages**
+- 2025-12-30 12:01 f881558 **docs: generate readme**
+- 2025-12-30 12:01 dd462ee **docs: generate CHANGELOG**
 - 2025-12-29 22:48 263518d **refactor: order decorators**
 - 2025-12-29 22:33 96b7dde **step: add with fail safe to prereqs**
 - 2025-12-29 22:23 7d1e028 **step: add with timeout to prereqs**
